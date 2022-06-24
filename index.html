@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<title> S.S.S Memes </title>
+<body style="background-color:black;">
+<style>
+  * {
+  box-sizing: border-box;
+}
+.meme {
+  text-align:center;
+}
+p { position: absolute; 
+  left: 0;
+  right: 0; 
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow:2px 2px 0 #000,
+  -2px -2px 0 #000,
+  2px -2px 0 #000,
+  -2px 2px 0 #000,
+  0px 2px 0 #000,
+  2px 0px 0 #000,
+  0px -2px 0 #000,
+  -2px 0px 0 #000,
+  2px 2px 5px #000;
+}
+#textStr2 {
+  margin: 340px 0;
+}
+#textStr3 {
+  margin: 365px 0;
+}
+  
+</style>
+<script>
+
+
+function DisplayImage() {
+  var imgArray = new Array();
+//list  of images
+imgArray[0] = 'http://i0.kym-cdn.com/photos/images/original/001/248/399/430.png';
+
+imgArray[1] = 'https://www.koreaboo.com/wp-content/uploads/2017/06/photo.jpg';
+
+imgArray[2] = 'https://v.cdn.vine.co/r/thumbs/FDBA13FAAA1401659405963063296_5e319fff060.35.0.CF3EFE8D-A9A8-49A9-8679-F9406110E2E7.mp4.jpg';
+
+imgArray[3] = 'https://imgflip.com/s/meme/Creepy-Condescending-Wonka.jpg';
+
+imgArray[4] = 'https://v.cdn.vine.co/r/avatars/010520885F1388009793188454400_562e4096237.35.0.jpg?versionId=JJA8R2TFT.QH9s0yslT31enf3GDxiha3';
+
+imgArray[5] = 'https://i.imgflip.com/1u9glk.jpg';
+  
+imgArray[6] ='https://imgflip.com/s/meme/Black-Girl-Wat.jpg';
+  
+imgArray[7] = 'http://i0.kym-cdn.com/entries/icons/medium/000/005/180/YaoMingMeme.jpg'
+  
+imgArray[8] = 'https://www.diylol.com/assets/sites/diylol.com/templates/annoying-facebook-girl-57b54a3c5823cfa14b85d3cb94feb1b5351e2e5ebb03d58cd0d4f72899f45f31.jpg'
+ 
+imgArray[9] = 'https://memegenerator.net/img/images/14670810/dank-memes-mlg.jpg'
+//list of top text 
+  var textArray1 = ["when ur jewish","when ur from alabama","when u eat soup","when u go to a guys' strip club" 
+  ,"when u notice ur not asian","when u notice there is actually such a thing as feminism","when u just finished watching sex in the city 2","when u notice gravity falls is for kids","when u eat for the first time at kfc","when ur bored"]
+ var textArray2 = ["and ur stepsis","and ur cousin","and ur homie","and donald trump","and a registered sex offender","and a homo","and a jew","and a nazi","and kim jong un","and a isis member's ass"]
+ var textArray3 = ["gives you tide pods","touches your private parts","finds out","says he wants to marry ur mum","says trannies are based","walks in","takes your balls","starts dabbing","tries to do a high-quality dance","Says he has important business to discuss"]
+ //picture script 
+ var randomimage = Math.floor ((Math.random() * imgArray.length));
+  alert(randomimage);
+  var imgStr = imgArray[randomimage];
+  
+  
+  document.getElementById("myPicture").src = imgStr;
+   
+  var randomText1 = Math.floor ((Math.random() * textArray1.length));
+  alert(randomText1);
+  var textStr1 = textArray1[randomText1];
+   document.getElementById('textStr1').innerHTML =  textStr1 ;
+            
+  var randomText2 = Math.floor ((Math.random() * textArray2.length));
+  alert(randomText2);
+  var textStr2 = textArray2[randomText2];
+   document.getElementById('textStr2').innerHTML =  textStr2 ;            
+  
+   var randomText3 = Math.floor ((Math.random() * textArray3.length));
+  alert(randomText3);
+  var textStr3 = textArray3[randomText3];
+   document.getElementById('textStr3').innerHTML =  textStr3 ;
+}
+
+</script>
+<body>
+   <input type="button" value="meme with random text" onclick="DisplayImage()" />
+  <br/>
+  <br/>
+ <div class='meme'>
+   <p id="textStr1"></p>
+   <p id="textStr2"></p>
+   <p id="textStr3"></p>
+  <img src="http://i0.kym-cdn.com/photos/images/original/001/248/399/430.png" length=400 width=400  id="myPicture" alt="some image"></img></div>  </body>
+</html>
