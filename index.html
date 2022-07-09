@@ -1,6 +1,34 @@
 <!DOCTYPE html>
 <html>
 <title> S.S.S Memes </title>
+<head>
+<script language="JavaScript">
+/*function check(e)
+{
+alert(e.keyCode);
+}*/
+document.addEventListener('contextmenu', event => event.preventDefault());
+
+document.onkeydown = function (e) {
+      
+      if(e.keyCode == 123) {
+          alert("F12 disabled");
+          return false;
+      }
+      
+      if(e.ctrlKey && e.keyCode == 67) {
+          alert("ctrl + c disabled");
+          return false;
+      }
+      
+      if(e.ctrlKey && e.keyCode == 85) {
+          alert("ctrl + u disable");
+          return false;
+      }
+      
+}     
+</script>
+</head>
 <body style="background-color:black;"> 
 <style>
   * {
